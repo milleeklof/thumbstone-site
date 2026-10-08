@@ -4,8 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Thumbstone</title>
-  <meta name="description" content="Thumbstone locks the apps you scroll too much. Type a short text to unlock them, and every unlock costs more words.">
+  <meta name="description" content="An app that locks the apps eating your life. Type to unlock. Watch the years add up.">
   <meta name="theme-color" content="#08111f">
+  <!-- Open Graph needs absolute URLs, so these point at the live site. -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Thumbstone">
+  <meta property="og:description" content="An app that locks the apps eating your life. Type to unlock. Watch the years add up.">
+  <meta property="og:url" content="https://milleeklof.github.io/thumbstone-site/">
+  <meta property="og:image" content="https://milleeklof.github.io/thumbstone-site/assets/thumbstone-icon.png">
+  <meta property="og:image:width" content="480">
+  <meta property="og:image:height" content="480">
+  <meta name="twitter:card" content="summary">
   <link rel="icon" type="image/png" href="assets/thumbstone-icon.png">
   <link rel="apple-touch-icon" href="assets/thumbstone-icon.png">
   <link rel="stylesheet" href="style.css">
@@ -24,30 +33,62 @@
       <section class="intro">
         <img class="app-icon" src="assets/thumbstone-icon.png" alt="Thumbstone app icon" width="160" height="160">
         <h1>Thumbstone</h1>
-        <p class="tagline">Make every scroll cost something.</p>
+        <p class="tagline">You are scrolling your life away. Nobody is stopping you.</p>
+      </section>
 
-        <!-- App Store button goes here once the app is live. -->
+      <section class="section narrow">
+        <h2>Do the math</h2>
+        <p>Two hours a day doesn't feel like much. It's a few videos, a few posts, a few minutes here and there.</p>
+        <p>Over a lifetime, it's almost seven of your fifty-three waking years. Seven years you won't remember, spent on a feed that has already forgotten you.</p>
+      </section>
 
-        <div class="steps">
-          <ol>
-            <li>Pick the apps you want to stop living in.</li>
-            <li>When you open one, it's locked.</li>
-            <li>Type a short text to unlock it for the next 15 minutes.</li>
-            <li>Every unlock that day costs more words, from 10 up to 200.</li>
-          </ol>
-          <p class="muted">Track your dead time, keep your streak alive, and watch the graveyard grow when you don't.</p>
+      <section class="section narrow">
+        <h2>We've all agreed not to notice</h2>
+        <p>We count our steps, our sleep and our calories. We don't count the years we hand over to our phones, fifteen minutes at a time.</p>
+        <p>A whole generation is scrolling its life away, and nobody seems to mind. That is madness. Thumbstone is a way to see it for what it is.</p>
+      </section>
+
+      <section class="section narrow">
+        <h2>How it works</h2>
+        <p><strong>Every app you choose is locked.</strong> Social media, short videos, the news, whatever eats your day. You pick them, and they stay locked.</p>
+        <p><strong>To open one, you have to type it out.</strong> A short text where you admit what you are about to do. The first one of the day is ten words. Every unlock after that is longer, up to two hundred. Then you get the next fifteen minutes, whether you use them or not.</p>
+        <p><strong>Every minute is counted.</strong> Thumbstone calls it dead time, and shows you what it adds up to: today, this year, and over your life.</p>
+        <p><strong>Stay under your limit to stay alive.</strong> Every day under your daily limit keeps your streak alive. Go over, and it dies. It gets a grave in your graveyard. You can bring it back, but only if you earn it the next day.</p>
+      </section>
+
+      <section class="section">
+        <div class="narrow">
+          <h2>Inside</h2>
+        </div>
+        <!-- Screenshots live in assets/screenshots/ (1000 × 2172 JPEG). To add one, add another <figure>. -->
+        <div class="shots" tabindex="0" aria-label="Screenshots">
+          <figure>
+            <img src="assets/screenshots/1-typing-short.jpg" width="1000" height="2172" alt="The unlock screen for the first unlock of the day, ten words: “I choose to waste fifteen more minutes of my life.” half typed above the keyboard.">
+            <figcaption>The first unlock: ten words.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/screenshots/2-typing-long.jpg" width="1000" height="2172" alt="The unlock screen for the ninth unlock of the day: a two hundred word text, partly typed, about having already unlocked many times today.">
+            <figcaption>The ninth: two hundred.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/screenshots/3-graveyard.jpg" width="1000" height="2172" loading="lazy" alt="The streak screen: 12 days alive, and a graveyard calendar for the month where days over the limit are marked with graves.">
+            <figcaption>Every day over your limit gets a grave.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/screenshots/4-dashboard.jpg" width="1000" height="2172" loading="lazy" alt="The stats screen: dead time this week, month and year, and a bar chart of the last 30 days with a dashed line for the daily limit.">
+            <figcaption>Every minute, counted.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/screenshots/5-lifetime.jpg" width="1000" height="2172" loading="lazy" alt="The stats screen: the share of waking time being scrolled away, and what it adds up to per year and over a whole life.">
+            <figcaption>What it adds up to.</figcaption>
+          </figure>
         </div>
       </section>
 
-      <!--
-        Screenshots: put the images in assets/screenshots/ as 1.png, 2.png and 3.png,
-        then replace each placeholder text with e.g.
-        <img src="assets/screenshots/1.png" alt="...">
-      -->
-      <section class="screenshots" aria-label="Screenshots">
-        <div class="screenshot">Screenshot</div>
-        <div class="screenshot">Screenshot</div>
-        <div class="screenshot">Screenshot</div>
+      <section class="section narrow closing">
+        <p>You only get one life.<br>Stop giving it away fifteen minutes at a time.</p>
+        <p class="muted">Coming soon to the App Store.</p>
+        <!-- App Store button goes here once the app is live. -->
       </section>
     </main>
 
