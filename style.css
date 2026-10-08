@@ -139,11 +139,11 @@ footer {
   margin-top: 0;
 }
 
-/* Screenshots: a horizontal row, wider than the text column. Add a <figure> to add one. */
-.shots {
-  --shots-width: min(1100px, 100vw - 40px);
-  width: var(--shots-width);
-  margin-left: calc(50% - var(--shots-width) / 2);
+/* Gallery: a horizontal row of phone screenshots, wider than the text column. Used for the app screenshots and the widgets. Add a <figure> to add an image. */
+.gallery {
+  --gallery-width: min(1100px, 100vw - 40px);
+  width: var(--gallery-width);
+  margin-left: calc(50% - var(--gallery-width) / 2);
   display: flex;
   gap: 24px;
   overflow-x: auto;
@@ -153,21 +153,21 @@ footer {
   scrollbar-color: var(--hill) transparent;
 }
 
-.shots::-webkit-scrollbar {
+.gallery::-webkit-scrollbar {
   height: 6px;
 }
 
-.shots::-webkit-scrollbar-thumb {
+.gallery::-webkit-scrollbar-thumb {
   background: var(--hill);
   border-radius: 3px;
 }
 
-.shots:focus-visible {
+.gallery:focus-visible {
   outline: 1px solid var(--beam-light);
   outline-offset: 6px;
 }
 
-.shots figure {
+.gallery figure {
   /* About two in view on desktop, but never taller than the window. */
   flex: 0 0 min((100% - 48px) / 2.2, 42vh);
   margin: 0;
@@ -175,7 +175,7 @@ footer {
   container-type: inline-size;
 }
 
-.shots img {
+.gallery img {
   display: block;
   width: 100%;
   height: auto;
@@ -183,7 +183,7 @@ footer {
   border-radius: 7cqi;
 }
 
-.shots figcaption {
+.gallery figcaption {
   margin-top: 12px;
   color: var(--faded);
   font-size: 14px;
@@ -226,8 +226,8 @@ footer {
     margin-top: 80px;
   }
 
-  /* One screenshot nearly full width, with the next one peeking in. */
-  .shots figure {
+  /* One image nearly full width, with the next one peeking in. */
+  .gallery figure {
     flex-basis: 82%;
   }
 }
