@@ -139,7 +139,7 @@ footer {
   margin-top: 0;
 }
 
-/* Gallery: a horizontal row of phone screenshots, wider than the text column. Used for the app screenshots and the widgets. Add a <figure> to add an image. */
+/* Gallery: a horizontal row of phone screenshots, wider than the text column. Add a <figure> to add an image. */
 .gallery {
   --gallery-width: min(1100px, 100vw - 40px);
   width: var(--gallery-width);
