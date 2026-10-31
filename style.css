@@ -189,6 +189,23 @@ footer {
   font-size: 14px;
 }
 
+/* Source notes under a section: the same small, muted text as the image captions. */
+.footnote {
+  margin-top: 12px;
+  color: var(--faded);
+  font-size: 14px;
+}
+
+.footnote a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* Footnote marks don't push the line apart. */
+sup {
+  line-height: 0;
+}
+
 .closing {
   text-align: center;
 }
